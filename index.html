@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project-2</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #d7d6d4;
+        }
+
+        .line {
+
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+            /* border:2px solid green;  */
+
+        }
+
+        .line1 {
+
+            width: 200px;
+            height: 2px;
+            background-color: black;
+
+            margin-left: 30px;
+        }
+
+        .line2 {
+
+            width: 75%;
+            height: 2px;
+            background-color: black;
+            margin-left: 120px;
+            margin-right: 80px;
+
+        }
+
+
+
+
+        header {
+
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 200px;
+            display: flex;
+            justify-content: space-between;
+
+
+
+        }
+
+        .logo {
+
+            /* margin-left: 56px; */
+            padding-left: 90px;
+            font-family: 'Fa brands 400';
+            color: #000;
+            font-size: 30px;
+            line-height: 1;
+            font-weight: 400;
+            margin-top: 18px;
+        }
+
+        ul {
+            display: flex;
+            width: 500PX;
+            /* border: 2px solid rgb(18, 17, 17); */
+            justify-content: space-between;
+            margin-top: 22px;
+
+
+
+
+        }
+
+        ul li {
+            list-style: none;
+
+            font-family: 'Roboto Mono', sans-serif;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 12px;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: 4px;
+            padding-left: 2px;
+
+        }
+
+        .search {
+
+            /* border: 2px solid black; */
+            width: 400px;
+
+
+        }
+
+        input {
+            width: 200px;
+            height: 33px;
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 12px;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: 4px;
+            border: none;
+            border-bottom: 2px solid black;
+            background-color: #d7d6d4;
+
+        }
+
+
+        button {
+            font-family: 'Roboto Mono', sans-serif;
+            color: white;
+            font-size: 12px;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: 4px;
+            width: 120px;
+            height: 34px;
+            background-color: black;
+            border: none;
+
+
+
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        /* section part style  */
+
+        .section1 {
+
+            display: flex;
+            justify-content: space-around;
+            /* border: 2px solid black; */
+            width: 100%;
+        }
+
+        .p1 {
+
+            padding-left: 80px;
+            margin-left: 50px;
+        }
+
+        .p2 {
+            margin-right: 290px;
+        }
+
+        .p3 {
+            margin-right: 150px;
+        }
+
+        p {
+            margin-top: 8px;
+            margin-left: 42px;
+            font-family: 'Roboto Mono', sans-serif;
+            color: #000;
+            font-size: 12px;
+            line-height: 1;
+            font-weight: 700;
+            letter-spacing: 3px;
+
+        }
+
+        .heading {
+            font-family: 'Fa brands 400';
+            color: #000;
+            font-size: 100px;
+            letter-spacing: 4px;
+            font-weight: 400;
+            line-height: 100px;
+            margin-left: 270px;
+        }
+
+        .section2-heading {
+
+            display: flex;
+            /* border: 2px solid rgb(221, 25, 205); */
+            /* position: relative;
+        left: 200px; */
+            justify-content: space-around;
+            height: 600px;
+
+
+        }
+
+        .aside-right {
+
+            /* border: 2px solid red; */
+            width: 300px;
+            height: 300px;
+            /* display: inline-block; */
+            /* display: flex; */
+        }
+
+        .aside-titleright {
+
+            /* border: 2px solid green; */
+            width: 230px;
+            height: 500px;
+            position: absolute;
+            top: 300px;
+            display: flex;
+            flex-direction: column;
+           
+        }
+
+        .section-body1 {
+
+            display: flex;
+            /* border: 2px solid red; */
+            width: 800px;
+            position: absolute;
+            top: 400px;
+            left: 252px;
+            height: 400px;
+        }
+
+        .image1 {
+
+            /* border: 2px solid green; */
+            width: 280px;
+            background: url("https://assets.website-files.com/5ce80c8c5d5c6004b2de7e6f/5ce80d6d935d746d58dbbf94_image-1.png") no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 350px;
+
+        }
+
+        .image-2 {
+
+            /* border: 2px solid rgb(9, 10, 9); */
+            width: 500px;
+
+        }
+
+
+        /* ASIDE STYLING  */
+
+        .a-img {
+
+            display: flex;
+            /* border: 2px solid black; */
+            width: 60px;
+            margin: 5px;
+            height: 60px;
+        }
+
+        .photography {
+            font-family: 'Roboto Mono', sans-serif;
+            color: #000;
+            letter-spacing: 2px;
+            font-weight: 200;
+            padding-left: 30px;
+            padding-top: 6px;
+
+
+        }
+
+        .a-num1 {
+            font-family: 'Roboto Mono', sans-serif;
+            color: rgba(0, 0, 0, 0.4);
+            letter-spacing: 2px;
+            font-weight: 200;
+            padding-left: 30px;
+            font-size: 12px;
+            line-height: 25px;
+
+
+
+        }
+
+        .outer-box {
+
+            display: flex;
+            /* border: 2px solid blue; */
+            padding: 5px;
+            margin-top: 13px;
+
+            background-color: #edebea;
+
+        }
+
+        .aim1 {
+
+            width: 44px;
+            height: 53px;
+        }
+
+        .outer-box:hover {
+
+            background-color: white;
+        }
+
+        .pra2 {
+            /* max-width: 420px; */
+            width: 420PX;
+            margin-top: 28px;
+            /* margin-bottom: 29px; */
+            font-family: Roboto, sans-serif;
+            color: rgba(0, 0, 0, 0.6);
+            font-size: 15px;
+            line-height: 1.20;
+            font-weight: 200;
+            letter-spacing: normal;
+            word-spacing: 2px;
+        }
+
+        .header2 {
+            padding-left: 40px;
+            font-family: 'Fa brands 400';
+            color: #000;
+            font-size: 37px;
+            line-height: 1.04;
+            font-weight: 400;
+           
+        }
+
+       .pra-button{
+        /* border: 2px solid red; */
+        /* display: inline-block; */
+        width: 200px;
+        height: 45px;
+        margin-top: 30px;
+        margin-left: 38px;
+       
+       }
+
+       .btn-pra{
+        width: 197px;
+        height: 43px;
+        background-color: rgb(38, 38, 38);
+        border: none;
+        
+       }
+.artical{
+
+    text-decoration: none;
+    color: white;
+    font-weight: 100;
+    font-family: Roboto, sans-serif;
+    
+    
+    
+}
+/* 2ndaside book start */
+
+.book-box{
+    /* border: 2px solid red; */
+    padding-top: 12px;
+    margin-top: 20px;
+}
+#books{
+
+    font-size: 13px;
+    font-weight: 400;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 3px;
+    
+    
+    
+}
+/* 2ind sideleft  */
+
+.main-aside-container{
+
+    /* border: 2px solid rgb(185, 36, 36); */
+    display: flex;
+    margin-top: 3px;
+    flex-direction: column;
+
+    height: 270px;
+    
+}
+
+.left-2aside{
+
+    display: flex;
+    /* border: 2px solid gold; */
+    height: 75px;
+    margin-top: 8px;
+   
+}
+.book-header{
+
+    margin-left: 30px;
+
+    
+
+    
+}
+.book-h4-inside{
+    letter-spacing: 2px;
+            font-weight: 600;
+            padding-left: 30px;
+            padding-top: 6px;
+            font-family: Roboto, sans-serif;
+            font-size: 13px;
+            letter-spacing: 6px;
+}
+.h6{
+    font-family: 'Roboto Mono', sans-serif;
+            color: rgba(0, 0, 0, 0.4);
+            letter-spacing: 2px;
+            font-weight: 200;
+            padding-left: 30px;
+            font-size: 12px;
+            padding-top: 8px;
+}
+
+footer{
+    width: 70%;
+    height: 120px;
+    /* border: red solid 2px; */
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 400;
+    font-size: 13PX;
+    color: rgb(115, 113, 113);
+    letter-spacing: 2.05PX;
+    margin-top: 27px;
+}
+.f2{
+    margin-right: 200px;
+
+}
+
+.same-icon{
+
+    margin-left: 77px;
+    margin-top: 40px;
+}
+.icon-title{
+
+    /* text-transform: rotate(180deg); */
+    writing-mode: vertical-rl;
+}
+    
+#h6{
+    font-family: 'Roboto Mono', sans-serif;
+    font-weight: 400;
+    font-size: 12PX;
+    color: rgb(115, 113, 113);
+    letter-spacing: 2.05PX;
+    margin-right: 137px;
+    margin-top: 50px;
+    transform: rotate(180deg);
+
+    
+    
+    
+   
+}
+.anchor{
+
+    /* text-decoration: none; */
+    color: black;
+}
+.footer-anch{
+
+    text-decoration: none;
+    color: rgb(115, 113, 113);
+}
+
+
+
+
+
+    </style>
+</head>
+
+<body>
+    <div class="line">
+
+
+        <div class="line1"></div>
+        <div class="line2"></div>
+
+
+
+    </div>
+
+    <header>
+
+        <div class="logo">
+            Architecture<br>
+            Magazine
+
+        </div>
+
+        <ul>
+            <li>HOME</li>
+            <li>OUR WORK</li>
+            <li>ARCHITECTURE</li>
+            <li>CONTACT US</li>
+        </ul>
+
+        <div class="search">
+
+            <input type="text" name="submit" placeholder="TYPE"><button>Submit</button>
+        </div>
+    </header>
+
+    <div class="section1">
+
+        <p class="p1">01</p>
+        <p class="p2">MORE ABOUT ARCHITECTURE</p>
+        <p class="p3">NEXT ARTICLES</p>
+    </div>
+
+    <div class="section2-heading">
+
+        <h1 class="heading">Architecture</h1>
+
+
+
+        <div class="aside-right">
+
+            <div class="outer-box">
+
+                <div class="a-img">
+                    <img src="https://assets.website-files.com/5ce80c8c5d5c6004b2de7e6f/5ce80d6d935d747875dbbf93_image-6.png"
+                        alt="" class="aim1">
+                </div>
+                <div class="right-title1">
+                    <h3 class="photography">PHOTOGRAPHY</h3>
+                    <H4 class="a-num1">20. November 2016</H4>
+
+                </div>
+            </div>
+
+
+            <div class="outer-box">
+
+                <div class="a-img">
+                    <img src="https://assets.website-files.com/5ce80c8c5d5c6004b2de7e6f/5ce80d6d39a39a4f12d7adbd_image-4.png"
+                        alt="" class="aim1">
+                </div>
+                <div class="right-title1">
+                    <h3 class="photography">INTERIOR</h3>
+                    <H4 class="a-num1">8. January 2015</H4>
+
+                </div>
+            </div>
+            <div class="outer-box">
+
+                <div class="a-img">
+                    <img src="https://assets.website-files.com/5ce80c8c5d5c6004b2de7e6f/5ce80d6d39a39a21fed7adbc_image-5.png"
+                        alt="" class="aim1">
+                </div>
+                <div class="right-title1">
+                    <h3 class="photography">EXTERIOR</h3>
+                    <H4 class="a-num1">No posts</H4>
+
+                </div>
+            </div>
+
+
+<div class="book-box">
+
+    <h2 id="books">BOOKS</h2>
+</div>
+
+<div class="main-aside-container">
+
+    <div class="left-2aside">
+        
+      <img src="https://assets.website-files.com/5ce80c8c5d5c6004b2de7e6f/5ce80d6d165f600699cb030c_image-7.png" alt="" >
+        <div class="book-header">
+            <h4 class="book-h4-inside">
+
+                BLUEPRINT  &<BR>
+                    BUILDING
+                </h4>
+                <h6 class="h6">Russell Kennedy</h6>
+        </div>
+
+    </div>
+    <!-- 2ind box -->
+    <div class="left-2aside">
+        
+        <img src="https://assets.website-files.com/5ce80c8c5d5c6004b2de7e6f/5ce80d6d5d5c6045c1de81e1_image-2.png" alt="">       
+         <div class="book-header">
+            <h4 class="book-h4-inside">
+
+                MODERN  &<BR>
+                    ARCHITECTURE
+                </h4>
+                <h6 class="h6">Mitchel Pittman</h6>
+        </div>
+
+    </div>
+<!-- 3box -->
+<div class="left-2aside">
+        
+    <img src="https://assets.website-files.com/5ce80c8c5d5c6004b2de7e6f/5ce80d6d5d5c602790de81e2_image-3.png" alt="">    
+    <div class="book-header">
+        <h4 class="book-h4-inside">
+
+            ARCHITECTURE 
+            </h4>
+            <h6 class="h6">Russell Kennedy</h6>
+    </div>
+
+</div>
+
+
+    
+</div>
+   
+
+
+
+
+
+
+<!-- main div closed -->
+
+        </div>
+    </div>
+
+
+
+    <div class="aside-titleright">
+
+        <div class="first-icon same-icon">
+           <a href="#" class="anchor"> <i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="second-icon same-icon">
+            <a href="#" class="anchor"> <i class="fa-brands fa-facebook-f"></i></a>
+        </div>
+<div class="thired-icon same-icon">
+   <a href="#" class="anchor"><i class="fa-brands fa-dribbble"></i></a> 
+</div>
+
+<div class="icon-title">
+
+    <h6 id="h6">OUR SOCIALS</h6>
+</div>
+
+
+
+    </div>
+
+    <div class="section-body1">
+
+        <div class="image1">
+            <!-- <img src="https://assets.website-files.com/5ce80c8c5d5c6004b2de7e6f/5ce80d6d935d746d58dbbf94_image-1.png" alt=""> -->
+
+
+        </div>
+        <div class="image-2">
+
+            <h1 class="header2">Architecture<br>
+                Magazine</h1>
+
+            <p class="pra2">
+
+                We decided to use a class diagram instead of an object diagram since we wanted to show the classes our
+                project consists of and what those classes were each capable of (methods). The object diagram would
+                instead have shown the interaction between the classes at some point in run time.
+            </p>
+
+            <div class="pra-button">
+
+                <button class="btn-pra"> <a href="" class="artical">SEE FULL ARTICAL</a> </button>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+    <footer>
+        <div class="f1">01</div>
+       <a href="#" class="footer-anch"> <div class="f2">DESIGNED  BY  NIKESH</div></a>
+        <div class="F3">WATCH TUTORIAL</div>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>
